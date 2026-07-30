@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./profile-logo.png" width="150" height="150" alt="Profile Logo" />
+  <img src="./logo.png" width="150" height="150" alt="Profile Logo" />
   
   # Hi, I'm Syakib 👋
   ### Frontend Developer | Learning & Building 🚀
