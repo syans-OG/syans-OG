@@ -13,8 +13,8 @@
 <br/>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-rosy-two-86.vercel.app/api?username=syans-OG&show_icons=true&count_private=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F" alt="stats" />
-  <img width="49%" src="https://github-readme-stats-rosy-two-86.vercel.app/api/top-langs/?username=syans-OG&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F" alt="top langs" />
+  <img width="49%" src="https://github-readme-stats-rosy-two-86.vercel.app/api?username=syans-OG&show_icons=true&count_private=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=470" alt="stats" />
+  <img width="49%" src="https://github-readme-stats-rosy-two-86.vercel.app/api/top-langs/?username=syans-OG&layout=compact&langs_count=6&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=470" alt="top langs" />
 </div>
 
 <br/>
