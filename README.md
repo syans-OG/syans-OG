@@ -31,19 +31,13 @@
 <br/>
 
 <div align="center">
-  <h4 align="left" style="color: #38BDF8; font-family: monospace;"><code>PROJECTS.LIST &nbsp; ./projects.sh --all</code></h4>
-  <a href="https://github.com/syans-OG/Laris.in">
-    <img width="49%" src="https://github-readme-stats-rosy-two-86.vercel.app/api/pin/?username=syans-OG&repo=Laris.in&bg_color=0A101F&title_color=22D3EE&text_color=94A3B8&icon_color=A78BFA&border_color=1E293B" alt="Laris.in" />
-  </a>
-  <a href="https://github.com/syans-OG/SIGHT">
-    <img width="49%" src="https://github-readme-stats-rosy-two-86.vercel.app/api/pin/?username=syans-OG&repo=SIGHT&bg_color=0A101F&title_color=22D3EE&text_color=94A3B8&icon_color=A78BFA&border_color=1E293B" alt="SIGHT" />
-  </a>
+  <img src="./projects.svg" width="100%" alt="Projects" />
 </div>
 
 <br/><br/>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/syakib/"><img src="https://img.shields.io/badge/LINKEDIN-0A101F?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;
-  <a href="https://www.instagram.com/syans_14/"><img src="https://img.shields.io/badge/INSTAGRAM-0A101F?style=for-the-badge&logo=instagram&logoColor=white" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/syans-OG"><img src="https://img.shields.io/badge/GITHUB-0A101F?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/syakib/"><img src="https://img.shields.io/badge/LINKEDIN-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F" alt="LinkedIn" /></a>&nbsp;&nbsp;
+  <a href="https://www.instagram.com/syans_14/"><img src="https://img.shields.io/badge/INSTAGRAM-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/syans-OG"><img src="https://img.shields.io/badge/GITHUB-0A101F?style=for-the-badge&logo=github&logoColor=white&labelColor=0A101F" alt="GitHub" /></a>
 </p>

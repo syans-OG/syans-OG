@@ -1,0 +1,84 @@
+<svg width="1180" height="230" viewBox="0 0 1180 230" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font-family: monospace; font-size: 14px; font-weight: bold; fill: #38BDF8; }
+    .cmd { font-family: monospace; font-size: 14px; fill: #475569; }
+    .card-bg { fill: #0B1120; stroke: #1E293B; stroke-width: 1.5; rx: 10; }
+    .repo-name { font-family: monospace; font-size: 12px; fill: #94A3B8; }
+    .project-name { font-family: monospace; font-size: 20px; font-weight: bold; fill: #F8FAFC; }
+    .desc { font-family: monospace; font-size: 13px; fill: #94A3B8; }
+    .badge { fill: #1E1B4B; rx: 10; }
+    .badge-text { font-family: monospace; font-size: 11px; fill: #A78BFA; }
+    .stat { font-family: monospace; font-size: 12px; fill: #64748B; }
+    .circle-bg { fill: none; stroke: #1E293B; stroke-width: 8; }
+    .circle-fg { fill: none; stroke: #38BDF8; stroke-width: 8; stroke-dasharray: 160 200; }
+    .circle-fg2 { fill: none; stroke: #A78BFA; stroke-width: 8; stroke-dasharray: 130 200; }
+    .circle-text { font-family: monospace; font-size: 14px; font-weight: bold; fill: #F8FAFC; text-anchor: middle; dominant-baseline: middle; }
+    .dot { fill: #38BDF8; }
+    
+    /* Hover effects for SVG */
+    .card:hover .card-bg { stroke: #38BDF8; cursor: pointer; }
+  </style>
+
+  <text x="20" y="30" class="title">PROJECTS.LIST</text>
+  <text x="150" y="30" class="cmd">./projects.sh --all</text>
+
+  <!-- Card 1: Laris.in -->
+  <a href="https://github.com/syans-OG/Laris.in" target="_blank" class="card">
+    <g transform="translate(20, 60)">
+      <rect width="560" height="150" class="card-bg" />
+      <circle cx="25" cy="30" r="3" class="dot" />
+      <text x="35" y="34" class="repo-name">syans-OG/Laris.in</text>
+      
+      <!-- Icon/Avatar placeholder -->
+      <rect x="25" y="55" width="35" height="35" fill="#38BDF8" rx="8" />
+      <text x="42.5" y="78" font-family="monospace" font-size="18" fill="#0A101F" text-anchor="middle" font-weight="bold">L</text>
+      
+      <text x="75" y="68" class="project-name">Laris.in_</text>
+      <text x="75" y="88" class="desc">A seamless POS System app tailored for modern cashiers</text>
+      
+      <rect x="75" y="105" width="70" height="22" class="badge" />
+      <text x="85" y="120" class="badge-text">Flutter</text>
+      <rect x="155" y="105" width="55" height="22" class="badge" />
+      <text x="165" y="120" class="badge-text">Dart</text>
+
+      <text x="75" y="140" class="stat">★ 3   updated recently</text>
+
+      <!-- Progress Circle -->
+      <g transform="translate(480, 75)">
+        <circle cx="0" cy="0" r="30" class="circle-bg" />
+        <circle cx="0" cy="0" r="30" class="circle-fg" transform="rotate(-90)" />
+        <text x="0" y="2" class="circle-text">80%</text>
+      </g>
+    </g>
+  </a>
+
+  <!-- Card 2: SIGHT -->
+  <a href="https://github.com/syans-OG/SIGHT" target="_blank" class="card">
+    <g transform="translate(600, 60)">
+      <rect width="560" height="150" class="card-bg" />
+      <circle cx="25" cy="30" r="3" class="dot" />
+      <text x="35" y="34" class="repo-name">syans-OG/SIGHT</text>
+      
+      <!-- Icon/Avatar placeholder -->
+      <rect x="25" y="55" width="35" height="35" fill="#A78BFA" rx="8" />
+      <text x="42.5" y="78" font-family="monospace" font-size="18" fill="#0A101F" text-anchor="middle" font-weight="bold">S</text>
+      
+      <text x="75" y="68" class="project-name">SIGHT_</text>
+      <text x="75" y="88" class="desc">Vision assistance and image recognition system</text>
+      
+      <rect x="75" y="105" width="70" height="22" class="badge" />
+      <text x="85" y="120" class="badge-text">Flutter</text>
+      <rect x="155" y="105" width="55" height="22" class="badge" />
+      <text x="165" y="120" class="badge-text">Dart</text>
+
+      <text x="75" y="140" class="stat">★ 1   updated recently</text>
+
+      <!-- Progress Circle -->
+      <g transform="translate(480, 75)">
+        <circle cx="0" cy="0" r="30" class="circle-bg" />
+        <circle cx="0" cy="0" r="30" class="circle-fg2" transform="rotate(-90)" />
+        <text x="0" y="2" class="circle-text">65%</text>
+      </g>
+    </g>
+  </a>
+</svg>
