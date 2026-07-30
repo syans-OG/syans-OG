@@ -33,15 +33,15 @@
       <rect x="25" y="55" width="35" height="35" fill="#38BDF8" rx="8" />
       <text x="42.5" y="78" font-family="monospace" font-size="18" fill="#0A101F" text-anchor="middle" font-weight="bold">L</text>
       
-      <text x="75" y="68" class="project-name">Laris.in_</text>
-      <text x="75" y="88" class="desc">A seamless POS System app tailored for modern cashiers</text>
+      <text x="75" y="70" class="project-name">Laris.in_</text>
+      <text x="75" y="92" class="desc">A seamless POS System app tailored for modern cashiers</text>
       
-      <rect x="75" y="105" width="70" height="22" class="badge" />
-      <text x="85" y="120" class="badge-text">Flutter</text>
-      <rect x="155" y="105" width="55" height="22" class="badge" />
-      <text x="165" y="120" class="badge-text">Dart</text>
+      <rect x="75" y="108" width="70" height="22" class="badge" />
+      <text x="85" y="123" class="badge-text">Flutter</text>
+      <rect x="155" y="108" width="55" height="22" class="badge" />
+      <text x="165" y="123" class="badge-text">Dart</text>
 
-      <text x="75" y="140" class="stat">★ 3   updated recently</text>
+      <text x="75" y="145" class="stat">★ 3   updated recently</text>
 
       <!-- Progress Circle -->
       <g transform="translate(480, 75)">
@@ -63,15 +63,15 @@
       <rect x="25" y="55" width="35" height="35" fill="#A78BFA" rx="8" />
       <text x="42.5" y="78" font-family="monospace" font-size="18" fill="#0A101F" text-anchor="middle" font-weight="bold">S</text>
       
-      <text x="75" y="68" class="project-name">SIGHT_</text>
-      <text x="75" y="88" class="desc">Vision assistance and image recognition system</text>
+      <text x="75" y="70" class="project-name">SIGHT_</text>
+      <text x="75" y="92" class="desc">Vision assistance and image recognition system</text>
       
-      <rect x="75" y="105" width="70" height="22" class="badge" />
-      <text x="85" y="120" class="badge-text">Flutter</text>
-      <rect x="155" y="105" width="55" height="22" class="badge" />
-      <text x="165" y="120" class="badge-text">Dart</text>
+      <rect x="75" y="108" width="70" height="22" class="badge" />
+      <text x="85" y="123" class="badge-text">Flutter</text>
+      <rect x="155" y="108" width="55" height="22" class="badge" />
+      <text x="165" y="123" class="badge-text">Dart</text>
 
-      <text x="75" y="140" class="stat">★ 1   updated recently</text>
+      <text x="75" y="145" class="stat">★ 1   updated recently</text>
 
       <!-- Progress Circle -->
       <g transform="translate(480, 75)">
