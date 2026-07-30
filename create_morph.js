@@ -1,7 +1,8 @@
 const { createCanvas, loadImage } = require('@napi-rs/canvas');
 const fs = require('fs');
 
-async function imageToEdgePath(imagePath, targetWidth = 70, targetHeight = 70) {
+// Increase resolution to 90x90 for clearer logo, spacing 3.5 to keep same size
+async function imageToEdgePath(imagePath, targetWidth = 90, targetHeight = 90) {
   try {
     const img = await loadImage(imagePath);
     const canvas = createCanvas(targetWidth, targetHeight);
@@ -35,29 +36,29 @@ async function imageToEdgePath(imagePath, targetWidth = 70, targetHeight = 70) {
         
         let drawDot = false;
         
-        // Edge detection
-        if (diffX > 20 || diffY > 20) {
+        // Emphasize edges! (Sharp boundaries)
+        if (diffX > 15 || diffY > 15) {
           drawDot = true;
         } 
-        // Bright areas (hologram fill)
-        else if (b > 50) {
-          drawDot = Math.random() < (b / 255.0) * 0.7; // Bright areas get more dots
+        // For non-edges, we only put VERY sparse dots so it doesn't look noisy
+        // and only if the pixel is bright.
+        else if (b > 100) {
+          // 8% chance of dot in solid bright areas (was 70% before, which caused the noise!)
+          drawDot = Math.random() < 0.08; 
         }
         
         if (drawDot) {
           // Box is x=50 to 450 (width 400), center = 250
           // Box is y=120 to 560 (height 440), center = 340
-          // 70 * 4.5 = 315 width/height
+          // 90 * 3.5 = 315 width/height
           // startX = 250 - (315/2) = 92.5 -> use 90
           // startY = 340 - (315/2) = 182.5 -> use 180
           
-          const px = 90 + x * 4.5;
-          const py = 180 + y * 4.5;
+          const px = 90 + x * 3.5;
+          const py = 180 + y * 3.5;
           
-          // Add small random offset to dots for glitchy look
-          const dx = px + (Math.random() > 0.5 ? 1 : 0);
-          const dy = py + (Math.random() > 0.5 ? 1 : 0);
-          path += `M${dx} ${dy}h2v2h-2z`;
+          // No random jitter for edges, make it crisp!
+          path += `M${px} ${py}h1.5v1.5h-1.5z`;
         }
       }
     }
