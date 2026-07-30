@@ -1,7 +1,6 @@
 const { createCanvas, loadImage } = require('@napi-rs/canvas');
 const fs = require('fs');
 
-// Increase resolution to 90x90 for clearer logo, spacing 3.5 to keep same size
 async function imageToEdgePath(imagePath, targetWidth = 90, targetHeight = 90) {
   try {
     const img = await loadImage(imagePath);
@@ -11,7 +10,31 @@ async function imageToEdgePath(imagePath, targetWidth = 90, targetHeight = 90) {
     // Draw on black background
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, targetWidth, targetHeight);
-    ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
+    
+    // Add 8px padding so no logos are touching the edges of the canvas!
+    // This prevents any "cut off" appearance at the top/bottom.
+    const padding = 8;
+    const drawW = targetWidth - padding * 2;
+    const drawH = targetHeight - padding * 2;
+    
+    // Some SVGs might not be perfectly square, but drawImage will stretch them.
+    // We want to keep aspect ratio? The logos are mostly square.
+    // Wait, let's keep aspect ratio to be safe!
+    const aspect = img.width / img.height;
+    let finalW = drawW;
+    let finalH = drawH;
+    let offsetX = padding;
+    let offsetY = padding;
+    
+    if (aspect > 1) {
+      finalH = drawW / aspect;
+      offsetY = padding + (drawH - finalH) / 2;
+    } else if (aspect < 1) {
+      finalW = drawH * aspect;
+      offsetX = padding + (drawW - finalW) / 2;
+    }
+    
+    ctx.drawImage(img, offsetX, offsetY, finalW, finalH);
     
     const imgData = ctx.getImageData(0, 0, targetWidth, targetHeight);
     const data = imgData.data;
@@ -40,24 +63,15 @@ async function imageToEdgePath(imagePath, targetWidth = 90, targetHeight = 90) {
         if (diffX > 15 || diffY > 15) {
           drawDot = true;
         } 
-        // For non-edges, we only put VERY sparse dots so it doesn't look noisy
-        // and only if the pixel is bright.
         else if (b > 100) {
-          // 8% chance of dot in solid bright areas (was 70% before, which caused the noise!)
+          // Very sparse interior dots
           drawDot = Math.random() < 0.08; 
         }
         
         if (drawDot) {
-          // Box is x=50 to 450 (width 400), center = 250
-          // Box is y=120 to 560 (height 440), center = 340
-          // 90 * 3.5 = 315 width/height
-          // startX = 250 - (315/2) = 92.5 -> use 90
-          // startY = 340 - (315/2) = 182.5 -> use 180
-          
+          // Center correctly inside VISUAL.MAP box
           const px = 90 + x * 3.5;
           const py = 180 + y * 3.5;
-          
-          // No random jitter for edges, make it crisp!
           path += `M${px} ${py}h1.5v1.5h-1.5z`;
         }
       }
@@ -99,7 +113,8 @@ async function generateMorphingSvg() {
     }
     
     const opacityAnim = `<animate attributeName="opacity" values="${values}" keyTimes="${keyTimes}" dur="16s" repeatCount="indefinite" />`;
-    const floatAnim = `<animateTransform attributeName="transform" type="translate" values="0 0; 0 -15; 0 0" dur="5s" repeatCount="indefinite" />`;
+    // Lowered float height so it never risks hitting the top edge
+    const floatAnim = `<animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="5s" repeatCount="indefinite" />`;
     
     svgContent += `
     <g opacity="0">
