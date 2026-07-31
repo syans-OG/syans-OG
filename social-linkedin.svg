@@ -8,8 +8,8 @@
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode */
-    .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; transition: all 0.2s ease; }
+    /* Light Mode (GitHub Seamless Integration #ffffff) */
+    .card { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; transition: all 0.2s ease; }
     .icon { fill: #0f172a; }
     .label { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 700; font-size: 15px; }
     .handle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 500; font-size: 12px; }

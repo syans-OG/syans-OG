@@ -10,9 +10,9 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (default) */
-    .bg { fill: #f8fafc; }
-    .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; }
+    /* Light Mode (GitHub Seamless Integration #ffffff) */
+    .bg { fill: #ffffff; }
+    .card { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
     .title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 800; }
     .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 700; }
     .item-title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 700; }
