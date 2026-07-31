@@ -18,25 +18,25 @@
 <div align="center">
   <!-- Streak Stats (Supports Light/Dark mode via Picture) -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=syans-OG&hide_border=false&border_color=27272a&background=010101&ring=f8fafc&fire=f8fafc&currStreakLabel=a1a1aa&sideLabels=a1a1aa&currStreakNum=f8fafc&sideNums=f8fafc&dates=a1a1aa&titleColor=f8fafc&card_width=1180">
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=syans-OG&hide_border=false&border_color=e2e8f0&background=f8fafc&ring=0f172a&fire=0f172a&currStreakLabel=64748b&sideLabels=64748b&currStreakNum=0f172a&sideNums=0f172a&dates=64748b&titleColor=0f172a&card_width=1180">
-    <img width="100%" src="https://streak-stats.demolab.com/?user=syans-OG&hide_border=false&border_color=e2e8f0&background=f8fafc&ring=0f172a&fire=0f172a&currStreakLabel=64748b&sideLabels=64748b&currStreakNum=0f172a&sideNums=0f172a&dates=64748b&titleColor=0f172a&card_width=1180" alt="streak" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=27272a&amp;background=010101&amp;ring=f8fafc&amp;fire=f8fafc&amp;currStreakLabel=a1a1aa&amp;sideLabels=a1a1aa&amp;currStreakNum=f8fafc&amp;sideNums=f8fafc&amp;dates=a1a1aa&amp;titleColor=f8fafc&amp;card_width=1180">
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=e2e8f0&amp;background=f8fafc&amp;ring=0f172a&amp;fire=0f172a&amp;currStreakLabel=64748b&amp;sideLabels=64748b&amp;currStreakNum=0f172a&amp;sideNums=0f172a&amp;dates=64748b&amp;titleColor=0f172a&amp;card_width=1180">
+    <img width="100%" src="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=e2e8f0&amp;background=f8fafc&amp;ring=0f172a&amp;fire=0f172a&amp;currStreakLabel=64748b&amp;sideLabels=64748b&amp;currStreakNum=0f172a&amp;sideNums=0f172a&amp;dates=64748b&amp;titleColor=0f172a&amp;card_width=1180" alt="streak" />
   </picture>
 </div>
 
 <div align="center" style="margin-top: 10px;">
   <!-- General Stats -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=syans-OG&show_icons=true&count_private=true&hide_border=false&title_color=f8fafc&icon_color=f8fafc&text_color=a1a1aa&bg_color=010101&border_color=27272a">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=syans-OG&show_icons=true&count_private=true&hide_border=false&title_color=0f172a&icon_color=0f172a&text_color=64748b&bg_color=f8fafc&border_color=e2e8f0">
-    <img height="195" src="https://github-readme-stats.vercel.app/api?username=syans-OG&show_icons=true&count_private=true&hide_border=false&title_color=0f172a&icon_color=0f172a&text_color=64748b&bg_color=f8fafc&border_color=e2e8f0" alt="stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=syans-OG&amp;show_icons=true&amp;count_private=true&amp;hide_border=false&amp;title_color=f8fafc&amp;icon_color=f8fafc&amp;text_color=a1a1aa&amp;bg_color=010101&amp;border_color=27272a">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=syans-OG&amp;show_icons=true&amp;count_private=true&amp;hide_border=false&amp;title_color=0f172a&amp;icon_color=0f172a&amp;text_color=64748b&amp;bg_color=f8fafc&amp;border_color=e2e8f0">
+    <img height="195" src="https://github-readme-stats.vercel.app/api?username=syans-OG&amp;show_icons=true&amp;count_private=true&amp;hide_border=false&amp;title_color=0f172a&amp;icon_color=0f172a&amp;text_color=64748b&amp;bg_color=f8fafc&amp;border_color=e2e8f0" alt="stats" />
   </picture>
-  &nbsp;
+  &amp;nbsp;
   <!-- Top Langs -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&layout=compact&langs_count=8&hide_border=false&title_color=f8fafc&text_color=a1a1aa&bg_color=010101&border_color=27272a">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&layout=compact&langs_count=8&hide_border=false&title_color=0f172a&text_color=64748b&bg_color=f8fafc&border_color=e2e8f0">
-    <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&layout=compact&langs_count=8&hide_border=false&title_color=0f172a&text_color=64748b&bg_color=f8fafc&border_color=e2e8f0" alt="top langs" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&amp;layout=compact&amp;langs_count=8&amp;hide_border=false&amp;title_color=f8fafc&amp;text_color=a1a1aa&amp;bg_color=010101&amp;border_color=27272a">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&amp;layout=compact&amp;langs_count=8&amp;hide_border=false&amp;title_color=0f172a&amp;text_color=64748b&amp;bg_color=f8fafc&amp;border_color=e2e8f0">
+    <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&amp;layout=compact&amp;langs_count=8&amp;hide_border=false&amp;title_color=0f172a&amp;text_color=64748b&amp;bg_color=f8fafc&amp;border_color=e2e8f0" alt="top langs" />
   </picture>
 </div>
 
@@ -54,25 +54,25 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/syakib/">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LINKEDIN-010101?style=for-the-badge&logo=linkedin&logoColor=white&color=27272a">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LINKEDIN-f8fafc?style=for-the-badge&logo=linkedin&logoColor=0f172a&color=e2e8f0">
-      <img src="https://img.shields.io/badge/LINKEDIN-f8fafc?style=for-the-badge&logo=linkedin&logoColor=0f172a&color=e2e8f0" alt="LinkedIn" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LINKEDIN-010101?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;color=27272a">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LINKEDIN-f8fafc?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0f172a&amp;color=e2e8f0">
+      <img src="https://img.shields.io/badge/LINKEDIN-f8fafc?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0f172a&amp;color=e2e8f0" alt="LinkedIn" />
     </picture>
-  </a>&nbsp;&nbsp;
+  </a>&amp;nbsp;&amp;nbsp;
   
   <a href="https://www.instagram.com/syans_14/">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/INSTAGRAM-010101?style=for-the-badge&logo=instagram&logoColor=white&color=27272a">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/INSTAGRAM-f8fafc?style=for-the-badge&logo=instagram&logoColor=0f172a&color=e2e8f0">
-      <img src="https://img.shields.io/badge/INSTAGRAM-f8fafc?style=for-the-badge&logo=instagram&logoColor=0f172a&color=e2e8f0" alt="Instagram" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/INSTAGRAM-010101?style=for-the-badge&amp;logo=instagram&amp;logoColor=white&amp;color=27272a">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/INSTAGRAM-f8fafc?style=for-the-badge&amp;logo=instagram&amp;logoColor=0f172a&amp;color=e2e8f0">
+      <img src="https://img.shields.io/badge/INSTAGRAM-f8fafc?style=for-the-badge&amp;logo=instagram&amp;logoColor=0f172a&amp;color=e2e8f0" alt="Instagram" />
     </picture>
-  </a>&nbsp;&nbsp;
+  </a>&amp;nbsp;&amp;nbsp;
   
   <a href="https://github.com/syans-OG">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GITHUB-010101?style=for-the-badge&logo=github&logoColor=white&color=27272a">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GITHUB-f8fafc?style=for-the-badge&logo=github&logoColor=0f172a&color=e2e8f0">
-      <img src="https://img.shields.io/badge/GITHUB-f8fafc?style=for-the-badge&logo=github&logoColor=0f172a&color=e2e8f0" alt="GitHub" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GITHUB-010101?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;color=27272a">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GITHUB-f8fafc?style=for-the-badge&amp;logo=github&amp;logoColor=0f172a&amp;color=e2e8f0">
+      <img src="https://img.shields.io/badge/GITHUB-f8fafc?style=for-the-badge&amp;logo=github&amp;logoColor=0f172a&amp;color=e2e8f0" alt="GitHub" />
     </picture>
   </a>
 </p>
