@@ -30,25 +30,25 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/syakib/" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LINKEDIN-010101?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;color=27272a">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LINKEDIN-f8fafc?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0f172a&amp;color=e2e8f0">
-      <img src="https://img.shields.io/badge/LINKEDIN-f8fafc?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0f172a&amp;color=e2e8f0" alt="LinkedIn" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/-LinkedIn-010101?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;color=27272a">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/-LinkedIn-f8fafc?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0f172a&amp;color=e2e8f0">
+      <img src="https://img.shields.io/badge/-LinkedIn-f8fafc?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0f172a&amp;color=e2e8f0" alt="LinkedIn" />
     </picture>
   </a>&nbsp;&nbsp;
   
   <a href="https://www.instagram.com/syans_14/" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/INSTAGRAM-010101?style=for-the-badge&amp;logo=instagram&amp;logoColor=white&amp;color=27272a">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/INSTAGRAM-f8fafc?style=for-the-badge&amp;logo=instagram&amp;logoColor=0f172a&amp;color=e2e8f0">
-      <img src="https://img.shields.io/badge/INSTAGRAM-f8fafc?style=for-the-badge&amp;logo=instagram&amp;logoColor=0f172a&amp;color=e2e8f0" alt="Instagram" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/-Instagram-010101?style=for-the-badge&amp;logo=instagram&amp;logoColor=white&amp;color=27272a">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/-Instagram-f8fafc?style=for-the-badge&amp;logo=instagram&amp;logoColor=0f172a&amp;color=e2e8f0">
+      <img src="https://img.shields.io/badge/-Instagram-f8fafc?style=for-the-badge&amp;logo=instagram&amp;logoColor=0f172a&amp;color=e2e8f0" alt="Instagram" />
     </picture>
   </a>&nbsp;&nbsp;
   
   <a href="https://github.com/syans-OG" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GITHUB-010101?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;color=27272a">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GITHUB-f8fafc?style=for-the-badge&amp;logo=github&amp;logoColor=0f172a&amp;color=e2e8f0">
-      <img src="https://img.shields.io/badge/GITHUB-f8fafc?style=for-the-badge&amp;logo=github&amp;logoColor=0f172a&amp;color=e2e8f0" alt="GitHub" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/-GitHub-010101?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;color=27272a">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/-GitHub-f8fafc?style=for-the-badge&amp;logo=github&amp;logoColor=0f172a&amp;color=e2e8f0">
+      <img src="https://img.shields.io/badge/-GitHub-f8fafc?style=for-the-badge&amp;logo=github&amp;logoColor=0f172a&amp;color=e2e8f0" alt="GitHub" />
     </picture>
   </a>
 </p>
