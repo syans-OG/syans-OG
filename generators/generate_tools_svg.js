@@ -1,0 +1,138 @@
+const fs = require('fs');
+
+const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots-tools" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#94a3b8" opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <style>
+    :root { color-scheme: light dark; }
+
+    /* Light Mode (default) */
+    .bg { fill: #f8fafc; }
+    .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; }
+    .title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 800; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 700; }
+    .item-title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 700; }
+    .item-desc { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 500; }
+    .pill { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 1; }
+    .pill-text { fill: #0f172a; font-family: system-ui, sans-serif; font-weight: 600; }
+    .dot-accent { fill: #0f172a; }
+
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #010101; }
+      .card { fill: #0a0a0a; stroke: #27272a; }
+      .title { fill: #f8fafc; }
+      .subtitle { fill: #a1a1aa; }
+      .item-title { fill: #f8fafc; }
+      .item-desc { fill: #a1a1aa; }
+      .pill { fill: #18181b; stroke: #27272a; }
+      .pill-text { fill: #f8fafc; }
+      .dot-accent { fill: #f8fafc; }
+    }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1180" height="320" class="bg" />
+  <rect width="1180" height="320" fill="url(#dots-tools)" />
+
+  <!-- Section Header -->
+  <circle cx="46" cy="38" r="4" class="dot-accent" />
+  <text x="60" y="42" class="subtitle" font-size="12" letter-spacing="3">01 \u2014 THE ARSENAL</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CARD 1: Mobile & Frontend                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <rect x="40" y="65" width="365" height="215" rx="24" class="card" />
+    
+    <text x="70" y="105" class="subtitle" font-size="11" letter-spacing="2">CORE STACK</text>
+    <text x="70" y="132" class="item-title" font-size="20">Mobile &amp; Frontend</text>
+    <text x="70" y="154" class="item-desc" font-size="13">Building responsive, interactive UIs</text>
+
+    <!-- Pill Badges -->
+    <g transform="translate(70, 175)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="85" height="30" rx="15" class="pill" />
+      <text x="42.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Flutter</text>
+
+      <rect x="95" y="0" width="70" height="30" rx="15" class="pill" />
+      <text x="130" y="19" class="pill-text" font-size="12" text-anchor="middle">Dart</text>
+
+      <rect x="175" y="0" width="80" height="30" rx="15" class="pill" />
+      <text x="215" y="19" class="pill-text" font-size="12" text-anchor="middle">React</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="40" width="80" height="30" rx="15" class="pill" />
+      <text x="40" y="59" class="pill-text" font-size="12" text-anchor="middle">Next.js</text>
+
+      <rect x="90" y="40" width="105" height="30" rx="15" class="pill" />
+      <text x="142.5" y="59" class="pill-text" font-size="12" text-anchor="middle">TypeScript</text>
+
+      <rect x="205" y="40" width="80" height="30" rx="15" class="pill" />
+      <text x="245" y="59" class="pill-text" font-size="12" text-anchor="middle">Tailwind</text>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CARD 2: UI/UX & Creative                   -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <rect x="425" y="65" width="365" height="215" rx="24" class="card" />
+
+    <text x="455" y="105" class="subtitle" font-size="11" letter-spacing="2">CRAFT &amp; DESIGN</text>
+    <text x="455" y="132" class="item-title" font-size="20">UI/UX &amp; Creative</text>
+    <text x="455" y="154" class="item-desc" font-size="13">Crafting meaningful visual experiences</text>
+
+    <!-- Pill Badges -->
+    <g transform="translate(455, 175)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="75" height="30" rx="15" class="pill" />
+      <text x="37.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Figma</text>
+
+      <rect x="85" y="0" width="125" height="30" rx="15" class="pill" />
+      <text x="147.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Design Systems</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="40" width="125" height="30" rx="15" class="pill" />
+      <text x="62.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Glassmorphism</text>
+
+      <rect x="135" y="40" width="145" height="30" rx="15" class="pill" />
+      <text x="207.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Micro-Interactions</text>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CARD 3: Workflow & Tools                   -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <rect x="810" y="65" width="330" height="215" rx="24" class="card" />
+
+    <text x="840" y="105" class="subtitle" font-size="11" letter-spacing="2">ENVIRONMENT</text>
+    <text x="840" y="132" class="item-title" font-size="20">Tools &amp; Workflow</text>
+    <text x="840" y="154" class="item-desc" font-size="13">Version control &amp; deployment</text>
+
+    <!-- Pill Badges -->
+    <g transform="translate(840, 175)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="90" height="30" rx="15" class="pill" />
+      <text x="45" y="19" class="pill-text" font-size="12" text-anchor="middle">Git &amp; GitHub</text>
+
+      <rect x="100" y="0" width="75" height="30" rx="15" class="pill" />
+      <text x="137.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Node.js</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="40" width="75" height="30" rx="15" class="pill" />
+      <text x="37.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Vercel</text>
+
+      <rect x="85" y="40" width="85" height="30" rx="15" class="pill" />
+      <text x="127.5" y="59" class="pill-text" font-size="12" text-anchor="middle">VS Code</text>
+    </g>
+  </g>
+</svg>`;
+
+fs.writeFileSync('tools.svg', svg);
+console.log('tools.svg generated! (The Arsenal Bento Grid)');

@@ -1,0 +1,109 @@
+const fs = require('fs');
+
+const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#94a3b8" opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <style>
+    :root { color-scheme: light dark; }
+
+    /* Light Mode (default) */
+    .bg { fill: #f8fafc; }
+    .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; }
+    .title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 800; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 700; }
+    .body { font-family: system-ui, -apple-system, sans-serif; fill: #475569; font-weight: 500; }
+    .quote { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 600; }
+    .pill { fill: #0f172a; }
+    .pill-text { fill: #ffffff; font-family: system-ui, sans-serif; }
+    .dot-accent { fill: #0f172a; }
+    .ring { stroke: #94a3b8; }
+
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #010101; }
+      .card { fill: #0a0a0a; stroke: #27272a; }
+      .title { fill: #f8fafc; }
+      .subtitle { fill: #a1a1aa; }
+      .body { fill: #a1a1aa; }
+      .quote { fill: #f8fafc; }
+      .pill { fill: #f8fafc; }
+      .pill-text { fill: #0a0a0a; }
+      .dot-accent { fill: #f8fafc; }
+      .ring { stroke: #52525b; }
+    }
+
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    .spinning { animation: spin 25s linear infinite; transform-origin: 0px 0px; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1180" height="400" class="bg" />
+
+  <!-- Dot Grid Texture -->
+  <rect width="1180" height="400" fill="url(#dots)" />
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BENTO BOX 1 — Hero / Main Intro (left)     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <rect x="40" y="40" width="680" height="320" rx="28" class="card" />
+
+    <!-- Status dot + label -->
+    <circle cx="86" cy="78" r="5" class="dot-accent" />
+    <text x="105" y="82" class="subtitle" font-size="12" letter-spacing="3">SYANS CREATIVE SPACE</text>
+
+    <!-- Main typography cascade -->
+    <text x="75" y="160" class="title" font-size="52" letter-spacing="-2">SYANS\u00AE DEVELOPER</text>
+    <text x="75" y="218" class="title" font-size="52" letter-spacing="-2" opacity="0.35">THINKING BEYOND</text>
+    <text x="75" y="276" class="title" font-size="52" letter-spacing="-2" opacity="0.12">PIXELS.</text>
+
+    <!-- Description -->
+    <text x="80" y="315" class="body" font-size="14">A creative developer building digital experiences</text>
+    <text x="80" y="338" class="body" font-size="14">that blend emotion with function.</text>
+
+    <!-- Pill badge -->
+    <rect x="530" y="300" width="150" height="34" rx="17" class="pill" />
+    <text x="605" y="322" class="pill-text" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">UI / UX &amp; DEV</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BENTO BOX 2 — Identity (right-top)         -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <rect x="740" y="40" width="400" height="150" rx="28" class="card" />
+
+    <text x="780" y="82" class="subtitle" font-size="12" letter-spacing="3">IDENTITY</text>
+
+    <text x="780" y="125" class="quote" font-size="22" letter-spacing="-0.5">Syakib \u2022 18 y.o</text>
+    <text x="780" y="155" class="body" font-size="14">ID, Indonesia</text>
+
+    <!-- Spinning geometric accent -->
+    <g transform="translate(1068, 85)">
+      <circle cx="0" cy="0" r="30" fill="none" class="ring" stroke-width="1.5" stroke-dasharray="4 8" style="animation: spin 25s linear infinite; transform-origin: 0px 0px;" />
+      <circle cx="0" cy="0" r="14" fill="none" class="ring" stroke-width="1" stroke-dasharray="2 6" style="animation: spin 18s linear infinite reverse; transform-origin: 0px 0px;" />
+      <circle cx="0" cy="0" r="4" class="dot-accent" />
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BENTO BOX 3 — The Mantra (right-bottom)    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g>
+    <rect x="740" y="210" width="400" height="150" rx="28" class="card" />
+
+    <!-- Large decorative quote mark -->
+    <text x="760" y="310" class="title" font-size="120" opacity="0.06">\u201C</text>
+
+    <!-- Quote text -->
+    <text x="790" y="278" class="quote" font-size="22" letter-spacing="-0.5">Code is just a tool.</text>
+    <text x="790" y="310" class="quote" font-size="22" letter-spacing="-0.5">The goal is to feel.</text>
+  </g>
+
+</svg>`;
+
+fs.writeFileSync('profile-banner.svg', svg);
+console.log('profile-banner.svg generated!');
