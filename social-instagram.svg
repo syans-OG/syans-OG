@@ -15,13 +15,13 @@
     .handle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 500; font-size: 12px; }
     .arrow { fill: #64748b; font-family: system-ui, sans-serif; font-size: 14px; font-weight: 600; }
 
-    /* Dark Mode */
+    /* Dark Mode (GitHub Seamless Integration #0d1117) */
     @media (prefers-color-scheme: dark) {
-      .card { fill: #0a0a0a; stroke: #27272a; }
+      .card { fill: #010101; stroke: #30363d; }
       .icon { fill: #f8fafc; }
       .label { fill: #f8fafc; }
-      .handle { fill: #a1a1aa; }
-      .arrow { fill: #a1a1aa; }
+      .handle { fill: #8b949e; }
+      .arrow { fill: #8b949e; }
     }
   </style>
 

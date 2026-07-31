@@ -20,18 +20,18 @@
     .dot-accent { fill: #0f172a; }
     .ring { stroke: #94a3b8; }
 
-    /* Dark Mode */
+    /* Dark Mode (GitHub Seamless Integration #0d1117) */
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #010101; }
-      .card { fill: #0a0a0a; stroke: #27272a; }
+      .bg { fill: #0d1117; }
+      .card { fill: #010101; stroke: #30363d; }
       .title { fill: #f8fafc; }
-      .subtitle { fill: #a1a1aa; }
-      .body { fill: #a1a1aa; }
+      .subtitle { fill: #8b949e; }
+      .body { fill: #8b949e; }
       .quote { fill: #f8fafc; }
       .pill { fill: #f8fafc; }
-      .pill-text { fill: #0a0a0a; }
+      .pill-text { fill: #0d1117; }
       .dot-accent { fill: #f8fafc; }
-      .ring { stroke: #52525b; }
+      .ring { stroke: #30363d; }
     }
 
     @keyframes spin { 100% { transform: rotate(360deg); } }

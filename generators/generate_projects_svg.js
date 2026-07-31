@@ -24,23 +24,23 @@ const svg = `<svg width="1180" height="290" viewBox="0 0 1180 290" xmlns="http:/
     .dot-accent { fill: #0f172a; }
     .arrow-icon { stroke: #0f172a; }
 
-    /* Dark Mode */
+    /* Dark Mode (GitHub Seamless Integration #0d1117) */
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #010101; }
-      .card { fill: #0a0a0a; stroke: #27272a; }
+      .bg { fill: #0d1117; }
+      .card { fill: #010101; stroke: #30363d; }
       .title { fill: #f8fafc; }
-      .subtitle { fill: #a1a1aa; }
+      .subtitle { fill: #8b949e; }
       .project-title { fill: #f8fafc; }
-      .project-desc { fill: #a1a1aa; }
-      .pill { fill: #18181b; stroke: #27272a; }
+      .project-desc { fill: #8b949e; }
+      .pill { fill: #161b22; stroke: #30363d; }
       .pill-text { fill: #f8fafc; }
       .icon-box { fill: #f8fafc; }
-      .icon-text { fill: #0a0a0a; }
+      .icon-text { fill: #0d1117; }
       .dot-accent { fill: #f8fafc; }
       .arrow-icon { stroke: #f8fafc; }
     }
 
-    .card-group:hover .card { stroke: #94a3b8; }
+    .card-group:hover .card { stroke: #8b949e; }
     .card-group:hover .arrow-g { transform: translateX(6px); }
     .arrow-g { transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
   </style>

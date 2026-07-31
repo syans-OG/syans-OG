@@ -21,15 +21,15 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
     .pill-text { fill: #0f172a; font-family: system-ui, sans-serif; font-weight: 600; }
     .dot-accent { fill: #0f172a; }
 
-    /* Dark Mode */
+    /* Dark Mode (GitHub Seamless Integration #0d1117) */
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #010101; }
-      .card { fill: #0a0a0a; stroke: #27272a; }
+      .bg { fill: #0d1117; }
+      .card { fill: #010101; stroke: #30363d; }
       .title { fill: #f8fafc; }
-      .subtitle { fill: #a1a1aa; }
+      .subtitle { fill: #8b949e; }
       .item-title { fill: #f8fafc; }
-      .item-desc { fill: #a1a1aa; }
-      .pill { fill: #18181b; stroke: #27272a; }
+      .item-desc { fill: #8b949e; }
+      .pill { fill: #161b22; stroke: #30363d; }
       .pill-text { fill: #f8fafc; }
       .dot-accent { fill: #f8fafc; }
     }
