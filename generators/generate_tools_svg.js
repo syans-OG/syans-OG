@@ -10,7 +10,7 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards) */
+    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards + #D76F55 Terracotta Accent) */
     .bg { fill: #ffffff; }
     .card { fill: #F2F0EB; stroke: #D8D3C8; stroke-width: 1; }
     .title { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 800; }
@@ -19,9 +19,9 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
     .item-desc { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 500; }
     .pill { fill: #E8E4DB; stroke: #D8D3C8; stroke-width: 1; }
     .pill-text { fill: #181614; font-family: system-ui, sans-serif; font-weight: 600; }
-    .dot-accent { fill: #181614; }
+    .dot-accent { fill: #D76F55; }
 
-    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards) */
+    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards + #D76F55 Terracotta Accent) */
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
       .card { fill: #181614; stroke: #38342E; }
@@ -31,7 +31,7 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
       .item-desc { fill: #A8A29E; }
       .pill { fill: #2A2723; stroke: #38342E; }
       .pill-text { fill: #F2F0EB; }
-      .dot-accent { fill: #F2F0EB; }
+      .dot-accent { fill: #D76F55; }
     }
   </style>
 

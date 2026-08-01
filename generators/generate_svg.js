@@ -10,19 +10,19 @@ const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http:/
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards) */
+    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards + #D76F55 Terracotta Accent) */
     .bg { fill: #ffffff; }
     .card { fill: #F2F0EB; stroke: #D8D3C8; stroke-width: 1; }
     .title { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 800; }
     .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 700; }
     .body { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 500; }
     .quote { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 600; }
-    .pill { fill: #181614; }
-    .pill-text { fill: #F2F0EB; font-family: system-ui, sans-serif; }
-    .dot-accent { fill: #181614; }
+    .pill { fill: #D76F55; }
+    .pill-text { fill: #ffffff; font-family: system-ui, sans-serif; }
+    .dot-accent { fill: #D76F55; }
     .ring { stroke: #D8D3C8; }
 
-    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards) */
+    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards + #D76F55 Terracotta Accent) */
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
       .card { fill: #181614; stroke: #38342E; }
@@ -30,9 +30,9 @@ const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http:/
       .subtitle { fill: #A8A29E; }
       .body { fill: #A8A29E; }
       .quote { fill: #F2F0EB; }
-      .pill { fill: #F2F0EB; }
-      .pill-text { fill: #181614; }
-      .dot-accent { fill: #F2F0EB; }
+      .pill { fill: #D76F55; }
+      .pill-text { fill: #ffffff; }
+      .dot-accent { fill: #D76F55; }
       .ring { stroke: #38342E; }
     }
 

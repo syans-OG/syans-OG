@@ -11,20 +11,20 @@ function createSocialSVG({ platform, label, handle, iconPath, width = 375, heigh
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (Brand #F2F0EB Card) */
+    /* Light Mode (Brand #F2F0EB Card + #D76F55 Accent) */
     .card { fill: #F2F0EB; stroke: #D8D3C8; stroke-width: 1; transition: all 0.2s ease; }
     .icon { fill: #181614; }
     .label { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 700; font-size: 15px; }
     .handle { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 500; font-size: 12px; }
-    .arrow { fill: #78716C; font-family: system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+    .arrow { fill: #D76F55; font-family: system-ui, sans-serif; font-size: 14px; font-weight: 600; }
 
-    /* Dark Mode (Brand #181614 Card) */
+    /* Dark Mode (Brand #181614 Card + #D76F55 Accent) */
     @media (prefers-color-scheme: dark) {
       .card { fill: #181614; stroke: #38342E; }
       .icon { fill: #F2F0EB; }
       .label { fill: #F2F0EB; }
       .handle { fill: #A8A29E; }
-      .arrow { fill: #A8A29E; }
+      .arrow { fill: #D76F55; }
     }
   </style>
 

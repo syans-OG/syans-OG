@@ -8,7 +8,7 @@
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards) */
+    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards + #D76F55 Terracotta Accent) */
     .bg { fill: #ffffff; }
     .card { fill: #F2F0EB; stroke: #D8D3C8; stroke-width: 1; transition: stroke 0.3s ease; }
     .title { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 800; }
@@ -17,12 +17,12 @@
     .project-desc { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 500; }
     .pill { fill: #E8E4DB; stroke: #D8D3C8; stroke-width: 1; }
     .pill-text { fill: #181614; font-family: system-ui, sans-serif; font-weight: 600; }
-    .icon-box { fill: #181614; }
-    .icon-text { fill: #F2F0EB; font-family: system-ui, sans-serif; font-weight: 800; }
-    .dot-accent { fill: #181614; }
-    .arrow-icon { stroke: #181614; }
+    .icon-box { fill: #D76F55; }
+    .icon-text { fill: #ffffff; font-family: system-ui, sans-serif; font-weight: 800; }
+    .dot-accent { fill: #D76F55; }
+    .arrow-icon { stroke: #D76F55; }
 
-    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards) */
+    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards + #D76F55 Terracotta Accent) */
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
       .card { fill: #181614; stroke: #38342E; }
@@ -32,10 +32,10 @@
       .project-desc { fill: #A8A29E; }
       .pill { fill: #2A2723; stroke: #38342E; }
       .pill-text { fill: #F2F0EB; }
-      .icon-box { fill: #F2F0EB; }
-      .icon-text { fill: #181614; }
-      .dot-accent { fill: #F2F0EB; }
-      .arrow-icon { stroke: #F2F0EB; }
+      .icon-box { fill: #D76F55; }
+      .icon-text { fill: #ffffff; }
+      .dot-accent { fill: #D76F55; }
+      .arrow-icon { stroke: #D76F55; }
     }
 
     .card-group:hover .card { stroke: #8b949e; }
