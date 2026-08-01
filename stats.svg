@@ -43,23 +43,6 @@
       .bar-fill-secondary { fill: #F2F0EB; }
       .bar-fill-tertiary { fill: #A8A29E; }
     }
-
-    @keyframes beacon-pulse {
-      0% { r: 4px; opacity: 0.9; }
-      50% { r: 10px; opacity: 0; }
-      100% { r: 4px; opacity: 0; }
-    }
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.15); }
-    }
-    @keyframes bar-shimmer {
-      0%, 100% { opacity: 0.85; }
-      50% { opacity: 1; }
-    }
-    .pulse-ring { animation: beacon-pulse 2.2s ease-out infinite; transform-origin: 46px 38px; }
-    .icon-pulse { animation: heartbeat 2.6s ease-in-out infinite; transform-origin: center; }
-    .bar-shimmer { animation: bar-shimmer 2.5s ease-in-out infinite; }
   </style>
 
   <!-- Canvas Background -->
@@ -67,7 +50,6 @@
   <rect width="1180" height="320" fill="url(#dots-stats)" />
 
   <!-- Section Header -->
-  <circle cx="46" cy="38" r="4" fill="#D76F55" class="pulse-ring" />
   <circle cx="46" cy="38" r="4" class="dot-accent" />
   <text x="60" y="42" class="subtitle" font-size="12" letter-spacing="3">03 — STATS &amp; LANGUAGES</text>
 

@@ -38,17 +38,9 @@
       .arrow-icon { stroke: #D76F55; }
     }
 
-    @keyframes beacon-pulse {
-      0% { r: 4px; opacity: 0.9; }
-      50% { r: 10px; opacity: 0; }
-      100% { r: 4px; opacity: 0; }
-    }
-    @keyframes arrow-nudge {
-      0%, 100% { transform: translateX(0); }
-      50% { transform: translateX(5px); }
-    }
-    .pulse-ring { animation: beacon-pulse 2.2s ease-out infinite; transform-origin: 46px 30px; }
-    .arrow-g { animation: arrow-nudge 2s ease-in-out infinite; }
+    .card-group:hover .card { stroke: #8b949e; }
+    .card-group:hover .arrow-g { transform: translateX(6px); }
+    .arrow-g { transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
   </style>
 
   <!-- Canvas Background -->
@@ -56,7 +48,6 @@
   <rect width="1180" height="290" fill="url(#dots-projects)" />
 
   <!-- Section Header -->
-  <circle cx="46" cy="30" r="4" fill="#D76F55" class="pulse-ring" />
   <circle cx="46" cy="30" r="4" class="dot-accent" />
   <text x="60" y="34" class="subtitle" font-size="12" letter-spacing="3">02 — SELECTED WORKS</text>
 

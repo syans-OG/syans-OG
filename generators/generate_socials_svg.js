@@ -26,12 +26,6 @@ function createSocialSVG({ platform, label, handle, iconPath, width = 375, heigh
       .handle { fill: #A8A29E; }
       .arrow { fill: #D76F55; }
     }
-
-    @keyframes arrow-nudge-diag {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(3px, -3px); }
-    }
-    .arrow-nudge { animation: arrow-nudge-diag 2.2s ease-in-out infinite; transform-origin: center; }
   </style>
 
   <!-- Bento Card Base -->
@@ -49,10 +43,8 @@ function createSocialSVG({ platform, label, handle, iconPath, width = 375, heigh
     <text x="42" y="14" class="label">${label}</text>
     <text x="42" y="32" class="handle">${handle}</text>
 
-    <!-- Top Right Arrow Indicator with Micro-Animation -->
-    <g transform="translate(${width - 64}, 20)" class="arrow-nudge">
-      <text x="0" y="0" class="arrow">&#x2197;</text>
-    </g>
+    <!-- Top Right Arrow Indicator -->
+    <text x="${width - 64}" y="20" class="arrow">&#x2197;</text>
   </g>
 </svg>`;
 }
