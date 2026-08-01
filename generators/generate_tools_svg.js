@@ -33,6 +33,20 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
       .pill-text { fill: #F2F0EB; }
       .dot-accent { fill: #D76F55; }
     }
+
+    @keyframes beacon-pulse {
+      0% { r: 4px; opacity: 0.9; }
+      50% { r: 10px; opacity: 0; }
+      100% { r: 4px; opacity: 0; }
+    }
+    @keyframes float-pill {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    .pulse-ring { animation: beacon-pulse 2.2s ease-out infinite; transform-origin: 46px 38px; }
+    .float-1 { animation: float-pill 3.2s ease-in-out infinite; }
+    .float-2 { animation: float-pill 3.8s ease-in-out 0.6s infinite; }
+    .float-3 { animation: float-pill 3.4s ease-in-out 1.2s infinite; }
   </style>
 
   <!-- Canvas Background -->
@@ -40,6 +54,7 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
   <rect width="1180" height="320" fill="url(#dots-tools)" />
 
   <!-- Section Header -->
+  <circle cx="46" cy="38" r="4" fill="#D76F55" class="pulse-ring" />
   <circle cx="46" cy="38" r="4" class="dot-accent" />
   <text x="60" y="42" class="subtitle" font-size="12" letter-spacing="3">01 \u2014 THE ARSENAL</text>
 
@@ -53,27 +68,39 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
     <text x="70" y="132" class="item-title" font-size="20">Mobile &amp; Frontend</text>
     <text x="70" y="154" class="item-desc" font-size="13">Building responsive, interactive UIs</text>
 
-    <!-- Pill Badges -->
+    <!-- Pill Badges with Staggered Floating Micro-Animations -->
     <g transform="translate(70, 175)">
       <!-- Row 1 -->
-      <rect x="0" y="0" width="85" height="30" rx="15" class="pill" />
-      <text x="42.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Flutter</text>
+      <g class="float-1">
+        <rect x="0" y="0" width="85" height="30" rx="15" class="pill" />
+        <text x="42.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Flutter</text>
+      </g>
 
-      <rect x="95" y="0" width="70" height="30" rx="15" class="pill" />
-      <text x="130" y="19" class="pill-text" font-size="12" text-anchor="middle">Dart</text>
+      <g class="float-2">
+        <rect x="95" y="0" width="70" height="30" rx="15" class="pill" />
+        <text x="130" y="19" class="pill-text" font-size="12" text-anchor="middle">Dart</text>
+      </g>
 
-      <rect x="175" y="0" width="80" height="30" rx="15" class="pill" />
-      <text x="215" y="19" class="pill-text" font-size="12" text-anchor="middle">React</text>
+      <g class="float-3">
+        <rect x="175" y="0" width="80" height="30" rx="15" class="pill" />
+        <text x="215" y="19" class="pill-text" font-size="12" text-anchor="middle">React</text>
+      </g>
 
       <!-- Row 2 -->
-      <rect x="0" y="40" width="80" height="30" rx="15" class="pill" />
-      <text x="40" y="59" class="pill-text" font-size="12" text-anchor="middle">Next.js</text>
+      <g class="float-2">
+        <rect x="0" y="40" width="80" height="30" rx="15" class="pill" />
+        <text x="40" y="59" class="pill-text" font-size="12" text-anchor="middle">Next.js</text>
+      </g>
 
-      <rect x="90" y="40" width="105" height="30" rx="15" class="pill" />
-      <text x="142.5" y="59" class="pill-text" font-size="12" text-anchor="middle">TypeScript</text>
+      <g class="float-3">
+        <rect x="90" y="40" width="105" height="30" rx="15" class="pill" />
+        <text x="142.5" y="59" class="pill-text" font-size="12" text-anchor="middle">TypeScript</text>
+      </g>
 
-      <rect x="205" y="40" width="80" height="30" rx="15" class="pill" />
-      <text x="245" y="59" class="pill-text" font-size="12" text-anchor="middle">Tailwind</text>
+      <g class="float-1">
+        <rect x="205" y="40" width="80" height="30" rx="15" class="pill" />
+        <text x="245" y="59" class="pill-text" font-size="12" text-anchor="middle">Tailwind</text>
+      </g>
     </g>
   </g>
 
@@ -90,18 +117,26 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
     <!-- Pill Badges -->
     <g transform="translate(455, 175)">
       <!-- Row 1 -->
-      <rect x="0" y="0" width="75" height="30" rx="15" class="pill" />
-      <text x="37.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Figma</text>
+      <g class="float-2">
+        <rect x="0" y="0" width="75" height="30" rx="15" class="pill" />
+        <text x="37.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Figma</text>
+      </g>
 
-      <rect x="85" y="0" width="125" height="30" rx="15" class="pill" />
-      <text x="147.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Design Systems</text>
+      <g class="float-1">
+        <rect x="85" y="0" width="125" height="30" rx="15" class="pill" />
+        <text x="147.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Design Systems</text>
+      </g>
 
       <!-- Row 2 -->
-      <rect x="0" y="40" width="125" height="30" rx="15" class="pill" />
-      <text x="62.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Glassmorphism</text>
+      <g class="float-3">
+        <rect x="0" y="40" width="125" height="30" rx="15" class="pill" />
+        <text x="62.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Glassmorphism</text>
+      </g>
 
-      <rect x="135" y="40" width="145" height="30" rx="15" class="pill" />
-      <text x="207.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Micro-Interactions</text>
+      <g class="float-2">
+        <rect x="135" y="40" width="145" height="30" rx="15" class="pill" />
+        <text x="207.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Micro-Interactions</text>
+      </g>
     </g>
   </g>
 
@@ -118,18 +153,26 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
     <!-- Pill Badges -->
     <g transform="translate(840, 175)">
       <!-- Row 1 -->
-      <rect x="0" y="0" width="90" height="30" rx="15" class="pill" />
-      <text x="45" y="19" class="pill-text" font-size="12" text-anchor="middle">Git &amp; GitHub</text>
+      <g class="float-1">
+        <rect x="0" y="0" width="90" height="30" rx="15" class="pill" />
+        <text x="45" y="19" class="pill-text" font-size="12" text-anchor="middle">Git &amp; GitHub</text>
+      </g>
 
-      <rect x="100" y="0" width="75" height="30" rx="15" class="pill" />
-      <text x="137.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Node.js</text>
+      <g class="float-3">
+        <rect x="100" y="0" width="75" height="30" rx="15" class="pill" />
+        <text x="137.5" y="19" class="pill-text" font-size="12" text-anchor="middle">Node.js</text>
+      </g>
 
       <!-- Row 2 -->
-      <rect x="0" y="40" width="75" height="30" rx="15" class="pill" />
-      <text x="37.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Vercel</text>
+      <g class="float-2">
+        <rect x="0" y="40" width="75" height="30" rx="15" class="pill" />
+        <text x="37.5" y="59" class="pill-text" font-size="12" text-anchor="middle">Vercel</text>
+      </g>
 
-      <rect x="85" y="40" width="85" height="30" rx="15" class="pill" />
-      <text x="127.5" y="59" class="pill-text" font-size="12" text-anchor="middle">VS Code</text>
+      <g class="float-1">
+        <rect x="85" y="40" width="85" height="30" rx="15" class="pill" />
+        <text x="127.5" y="59" class="pill-text" font-size="12" text-anchor="middle">VS Code</text>
+      </g>
     </g>
   </g>
 </svg>`;

@@ -36,8 +36,21 @@ const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http:/
       .ring { stroke: #38342E; }
     }
 
-    @keyframes spin { 100% { transform: rotate(360deg); } }
-    .spinning { animation: spin 25s linear infinite; transform-origin: 0px 0px; }
+    @keyframes beacon-pulse {
+      0% { r: 5px; opacity: 0.9; }
+      50% { r: 12px; opacity: 0; }
+      100% { r: 5px; opacity: 0; }
+    }
+    @keyframes spin-cw { 100% { transform: rotate(360deg); } }
+    @keyframes spin-ccw { 100% { transform: rotate(-360deg); } }
+    @keyframes float-badge {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    .pulse-ring { animation: beacon-pulse 2.2s ease-out infinite; transform-origin: 86px 78px; }
+    .spinning-cw { animation: spin-cw 20s linear infinite; transform-origin: 0px 0px; }
+    .spinning-ccw { animation: spin-ccw 14s linear infinite; transform-origin: 0px 0px; }
+    .badge-float { animation: float-badge 3.5s ease-in-out infinite; }
   </style>
 
   <!-- Canvas Background -->
@@ -52,7 +65,8 @@ const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http:/
   <g>
     <rect x="40" y="40" width="680" height="320" rx="28" class="card" />
 
-    <!-- Status dot + label -->
+    <!-- Status dot + beacon pulse + label -->
+    <circle cx="86" cy="78" r="5" fill="#D76F55" class="pulse-ring" />
     <circle cx="86" cy="78" r="5" class="dot-accent" />
     <text x="105" y="82" class="subtitle" font-size="12" letter-spacing="3">SYANS CREATIVE SPACE</text>
 
@@ -65,9 +79,11 @@ const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http:/
     <text x="80" y="315" class="body" font-size="14">A creative developer building digital experiences</text>
     <text x="80" y="338" class="body" font-size="14">that blend emotion with function.</text>
 
-    <!-- Pill badge -->
-    <rect x="530" y="300" width="150" height="34" rx="17" class="pill" />
-    <text x="605" y="322" class="pill-text" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">UI / UX &amp; DEV</text>
+    <!-- Pill badge with float micro-animation -->
+    <g class="badge-float">
+      <rect x="530" y="300" width="150" height="34" rx="17" class="pill" />
+      <text x="605" y="322" class="pill-text" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">UI / UX &amp; DEV</text>
+    </g>
   </g>
 
   <!-- ═══════════════════════════════════════════ -->
@@ -81,10 +97,10 @@ const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http:/
     <text x="780" y="125" class="quote" font-size="22" letter-spacing="-0.5">Syakib \u2022 18 y.o</text>
     <text x="780" y="155" class="body" font-size="14">ID, Indonesia</text>
 
-    <!-- Spinning geometric accent -->
+    <!-- Dual Counter-Rotating geometric accent -->
     <g transform="translate(1068, 85)">
-      <circle cx="0" cy="0" r="30" fill="none" class="ring" stroke-width="1.5" stroke-dasharray="4 8" style="animation: spin 25s linear infinite; transform-origin: 0px 0px;" />
-      <circle cx="0" cy="0" r="14" fill="none" class="ring" stroke-width="1" stroke-dasharray="2 6" style="animation: spin 18s linear infinite reverse; transform-origin: 0px 0px;" />
+      <circle cx="0" cy="0" r="30" fill="none" class="ring spinning-cw" stroke-width="1.5" stroke-dasharray="4 8" />
+      <circle cx="0" cy="0" r="14" fill="none" class="ring spinning-ccw" stroke-width="1.2" stroke-dasharray="2 6" />
       <circle cx="0" cy="0" r="4" class="dot-accent" />
     </g>
   </g>
