@@ -9,16 +9,7 @@
     <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=d8d3c8&amp;background=F2F0EB&amp;ring=D76F55&amp;fire=D76F55&amp;currStreakLabel=78716c&amp;sideLabels=78716c&amp;currStreakNum=D76F55&amp;sideNums=181614&amp;dates=78716c&amp;titleColor=181614&amp;card_width=1180">
     <img width="100%" src="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=d8d3c8&amp;background=F2F0EB&amp;ring=D76F55&amp;fire=D76F55&amp;currStreakLabel=78716c&amp;sideLabels=78716c&amp;currStreakNum=D76F55&amp;sideNums=181614&amp;dates=78716c&amp;titleColor=181614&amp;card_width=1180" alt="streak" />
   </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=syans-OG&amp;show_icons=true&amp;count_private=true&amp;hide_border=false&amp;title_color=F2F0EB&amp;icon_color=D76F55&amp;text_color=A8A29E&amp;bg_color=181614&amp;border_color=38342e">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=syans-OG&amp;show_icons=true&amp;count_private=true&amp;hide_border=false&amp;title_color=181614&amp;icon_color=D76F55&amp;text_color=78716c&amp;bg_color=F2F0EB&amp;border_color=d8d3c8">
-    <img height="195" src="https://github-readme-stats.vercel.app/api?username=syans-OG&amp;show_icons=true&amp;count_private=true&amp;hide_border=false&amp;title_color=181614&amp;icon_color=D76F55&amp;text_color=78716c&amp;bg_color=F2F0EB&amp;border_color=d8d3c8" alt="stats" />
-  </picture>&nbsp;&nbsp;&nbsp;
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&amp;layout=compact&amp;langs_count=8&amp;hide_border=false&amp;title_color=F2F0EB&amp;text_color=A8A29E&amp;bg_color=181614&amp;border_color=38342e">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&amp;layout=compact&amp;langs_count=8&amp;hide_border=false&amp;title_color=181614&amp;text_color=78716c&amp;bg_color=F2F0EB&amp;border_color=d8d3c8">
-    <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=syans-OG&amp;layout=compact&amp;langs_count=8&amp;hide_border=false&amp;title_color=181614&amp;icon_color=D76F55&amp;text_color=78716c&amp;bg_color=F2F0EB&amp;border_color=d8d3c8" alt="top langs" />
-  </picture>
+  <img src="./stats.svg" width="100%" alt="GitHub Stats &amp; Top Languages" />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/syans-OG/syans-OG/output/github-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/syans-OG/syans-OG/output/github-snake.svg">
