@@ -10,28 +10,28 @@ const svg = `<svg width="1180" height="320" viewBox="0 0 1180 320" xmlns="http:/
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (GitHub Seamless Integration #ffffff) */
+    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards) */
     .bg { fill: #ffffff; }
-    .card { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
-    .title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 800; }
-    .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 700; }
-    .item-title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 700; }
-    .item-desc { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 500; }
-    .pill { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 1; }
-    .pill-text { fill: #0f172a; font-family: system-ui, sans-serif; font-weight: 600; }
-    .dot-accent { fill: #0f172a; }
+    .card { fill: #F2F0EB; stroke: #D8D3C8; stroke-width: 1; }
+    .title { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 800; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 700; }
+    .item-title { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 700; }
+    .item-desc { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 500; }
+    .pill { fill: #E8E4DB; stroke: #D8D3C8; stroke-width: 1; }
+    .pill-text { fill: #181614; font-family: system-ui, sans-serif; font-weight: 600; }
+    .dot-accent { fill: #181614; }
 
-    /* Dark Mode (GitHub Seamless Integration #0d1117) */
+    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards) */
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
-      .card { fill: #010101; stroke: #30363d; }
-      .title { fill: #f8fafc; }
-      .subtitle { fill: #8b949e; }
-      .item-title { fill: #f8fafc; }
-      .item-desc { fill: #8b949e; }
-      .pill { fill: #161b22; stroke: #30363d; }
-      .pill-text { fill: #f8fafc; }
-      .dot-accent { fill: #f8fafc; }
+      .card { fill: #181614; stroke: #38342E; }
+      .title { fill: #F2F0EB; }
+      .subtitle { fill: #A8A29E; }
+      .item-title { fill: #F2F0EB; }
+      .item-desc { fill: #A8A29E; }
+      .pill { fill: #2A2723; stroke: #38342E; }
+      .pill-text { fill: #F2F0EB; }
+      .dot-accent { fill: #F2F0EB; }
     }
   </style>
 

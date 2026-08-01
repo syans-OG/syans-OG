@@ -8,34 +8,34 @@
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (GitHub Seamless Integration #ffffff) */
+    /* Light Mode (Seamless GitHub #ffffff Canvas + Brand #F2F0EB Bento Cards) */
     .bg { fill: #ffffff; }
-    .card { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; transition: stroke 0.3s ease; }
-    .title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 800; }
-    .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 700; }
-    .project-title { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 700; }
-    .project-desc { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 500; }
-    .pill { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 1; }
-    .pill-text { fill: #0f172a; font-family: system-ui, sans-serif; font-weight: 600; }
-    .icon-box { fill: #0f172a; }
-    .icon-text { fill: #ffffff; font-family: system-ui, sans-serif; font-weight: 800; }
-    .dot-accent { fill: #0f172a; }
-    .arrow-icon { stroke: #0f172a; }
+    .card { fill: #F2F0EB; stroke: #D8D3C8; stroke-width: 1; transition: stroke 0.3s ease; }
+    .title { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 800; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 700; }
+    .project-title { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 700; }
+    .project-desc { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 500; }
+    .pill { fill: #E8E4DB; stroke: #D8D3C8; stroke-width: 1; }
+    .pill-text { fill: #181614; font-family: system-ui, sans-serif; font-weight: 600; }
+    .icon-box { fill: #181614; }
+    .icon-text { fill: #F2F0EB; font-family: system-ui, sans-serif; font-weight: 800; }
+    .dot-accent { fill: #181614; }
+    .arrow-icon { stroke: #181614; }
 
-    /* Dark Mode (GitHub Seamless Integration #0d1117) */
+    /* Dark Mode (Seamless GitHub #0d1117 Canvas + Brand #181614 Bento Cards) */
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
-      .card { fill: #010101; stroke: #30363d; }
-      .title { fill: #f8fafc; }
-      .subtitle { fill: #8b949e; }
-      .project-title { fill: #f8fafc; }
-      .project-desc { fill: #8b949e; }
-      .pill { fill: #161b22; stroke: #30363d; }
-      .pill-text { fill: #f8fafc; }
-      .icon-box { fill: #f8fafc; }
-      .icon-text { fill: #0d1117; }
-      .dot-accent { fill: #f8fafc; }
-      .arrow-icon { stroke: #f8fafc; }
+      .card { fill: #181614; stroke: #38342E; }
+      .title { fill: #F2F0EB; }
+      .subtitle { fill: #A8A29E; }
+      .project-title { fill: #F2F0EB; }
+      .project-desc { fill: #A8A29E; }
+      .pill { fill: #2A2723; stroke: #38342E; }
+      .pill-text { fill: #F2F0EB; }
+      .icon-box { fill: #F2F0EB; }
+      .icon-text { fill: #181614; }
+      .dot-accent { fill: #F2F0EB; }
+      .arrow-icon { stroke: #F2F0EB; }
     }
 
     .card-group:hover .card { stroke: #8b949e; }

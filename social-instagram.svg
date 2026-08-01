@@ -8,20 +8,20 @@
   <style>
     :root { color-scheme: light dark; }
 
-    /* Light Mode (GitHub Seamless Integration #ffffff) */
-    .card { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; transition: all 0.2s ease; }
-    .icon { fill: #0f172a; }
-    .label { font-family: system-ui, -apple-system, sans-serif; fill: #0f172a; font-weight: 700; font-size: 15px; }
-    .handle { font-family: system-ui, -apple-system, sans-serif; fill: #64748b; font-weight: 500; font-size: 12px; }
-    .arrow { fill: #64748b; font-family: system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+    /* Light Mode (Brand #F2F0EB Card) */
+    .card { fill: #F2F0EB; stroke: #D8D3C8; stroke-width: 1; transition: all 0.2s ease; }
+    .icon { fill: #181614; }
+    .label { font-family: system-ui, -apple-system, sans-serif; fill: #181614; font-weight: 700; font-size: 15px; }
+    .handle { font-family: system-ui, -apple-system, sans-serif; fill: #78716C; font-weight: 500; font-size: 12px; }
+    .arrow { fill: #78716C; font-family: system-ui, sans-serif; font-size: 14px; font-weight: 600; }
 
-    /* Dark Mode (GitHub Seamless Integration #0d1117) */
+    /* Dark Mode (Brand #181614 Card) */
     @media (prefers-color-scheme: dark) {
-      .card { fill: #010101; stroke: #30363d; }
-      .icon { fill: #f8fafc; }
-      .label { fill: #f8fafc; }
-      .handle { fill: #8b949e; }
-      .arrow { fill: #8b949e; }
+      .card { fill: #181614; stroke: #38342E; }
+      .icon { fill: #F2F0EB; }
+      .label { fill: #F2F0EB; }
+      .handle { fill: #A8A29E; }
+      .arrow { fill: #A8A29E; }
     }
   </style>
 
