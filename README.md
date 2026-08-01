@@ -4,12 +4,12 @@
   </a>
   <img src="./tools.svg" width="100%" alt="The Arsenal / Tech Stack" />
   <img src="./projects.svg" width="100%" alt="Projects" />
+  <img src="./stats.svg" width="100%" alt="GitHub Stats &amp; Top Languages" />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=38342e&amp;background=181614&amp;ring=D76F55&amp;fire=D76F55&amp;currStreakLabel=A8A29E&amp;sideLabels=A8A29E&amp;currStreakNum=D76F55&amp;sideNums=F2F0EB&amp;dates=A8A29E&amp;titleColor=F2F0EB&amp;card_width=1180">
     <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=d8d3c8&amp;background=F2F0EB&amp;ring=D76F55&amp;fire=D76F55&amp;currStreakLabel=78716c&amp;sideLabels=78716c&amp;currStreakNum=D76F55&amp;sideNums=181614&amp;dates=78716c&amp;titleColor=181614&amp;card_width=1180">
     <img width="100%" src="https://streak-stats.demolab.com/?user=syans-OG&amp;hide_border=false&amp;border_color=d8d3c8&amp;background=F2F0EB&amp;ring=D76F55&amp;fire=D76F55&amp;currStreakLabel=78716c&amp;sideLabels=78716c&amp;currStreakNum=D76F55&amp;sideNums=181614&amp;dates=78716c&amp;titleColor=181614&amp;card_width=1180" alt="streak" />
   </picture>
-  <img src="./stats.svg" width="100%" alt="GitHub Stats &amp; Top Languages" />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/syans-OG/syans-OG/output/github-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/syans-OG/syans-OG/output/github-snake.svg">
