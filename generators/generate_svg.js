@@ -78,7 +78,7 @@ const svg = `<svg width="1180" height="400" viewBox="0 0 1180 400" xmlns="http:/
 
     <text x="780" y="82" class="subtitle" font-size="12" letter-spacing="3">IDENTITY</text>
 
-    <text x="780" y="125" class="quote" font-size="22" letter-spacing="-0.5">Syakib \u2022 18 y.o</text>
+    <text x="780" y="125" class="quote" font-size="22" letter-spacing="-0.5">Syakib \u2022 19 y.o</text>
     <text x="780" y="155" class="body" font-size="14">ID, Indonesia</text>
 
     <!-- Spinning geometric accent -->
